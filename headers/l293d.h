@@ -27,12 +27,18 @@ private:
 	//String constants to be used for parsing the configuration file.
 	int enable_p12;
 	int inp_p1;
+	int inp_p1_state;
 	int inp_p2;
+	int inp_p2_state;
 
 	int enable_p34;
 	int inp_p3;
+	int inp_p3_state;
 	int inp_p4;
+	int inp_p4_state;
 
+	int range1;
+	int range2;
 	L293D();
 public:
 	//Constructors
@@ -78,6 +84,13 @@ public:
 	void reset_pin2();
 	void reset_pin3();
 	void reset_pin4();
+
+	int read_pin1();
+	int read_pin2();
+	int read_pin3();
+	int read_pin4();
+	int get_range1();
+	int get_range2();
 
 	virtual ~L293D();
 };
