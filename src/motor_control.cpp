@@ -4,7 +4,8 @@
  *  Created on: 10-Dec-2015
  *      Author: vmware
  */
-#include"l293d.h"
+#include "l293d.h"
+#include "motor_control.h"
 
 namespace motorcontrol
 {

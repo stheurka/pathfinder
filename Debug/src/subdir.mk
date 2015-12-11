@@ -4,13 +4,19 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../src/main.cpp 
+../src/command.cpp \
+../src/main.cpp \
+../src/motor_control.cpp 
 
 OBJS += \
-./src/main.o 
+./src/command.o \
+./src/main.o \
+./src/motor_control.o 
 
 CPP_DEPS += \
-./src/main.d 
+./src/command.d \
+./src/main.d \
+./src/motor_control.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

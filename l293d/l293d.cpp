@@ -82,7 +82,7 @@ void L293D::initialize_unit2(int en34, int inp3, int inp4, int mode)
 	}
 	else if(mode == L293D_PWMMODE)
 	{
-		softPwmStop(enable_p342);
+		softPwmStop(enable_p34);
 		//range set to 90 so that angle control is easier;
 		softPwmCreate(enable_p34, 0, 90);
 	}
