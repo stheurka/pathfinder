@@ -8,12 +8,12 @@
 #include<map>
 #include<string>
 
-namespace command
+namespace n_command
 {
 using namespace std;
 
 
-class command
+class c_command
 {
 private:
 		string cmd;

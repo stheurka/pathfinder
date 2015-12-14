@@ -5,16 +5,19 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
 ../src/command.cpp \
+../src/command_handler.cpp \
 ../src/main.cpp \
 ../src/motor_control.cpp 
 
 OBJS += \
 ./src/command.o \
+./src/command_handler.o \
 ./src/main.o \
 ./src/motor_control.o 
 
 CPP_DEPS += \
 ./src/command.d \
+./src/command_handler.d \
 ./src/main.d \
 ./src/motor_control.d 
 
